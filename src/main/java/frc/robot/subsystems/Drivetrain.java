@@ -27,8 +27,8 @@ public class Drivetrain extends SubsystemBase {
 
     /**Creates a new ExampleSubstem */
     public Drivetrain() { 
-      leftDriveTalon = new WPI_TalonSRX(Constants.DriveTrainPort.leftDriveTalon);
-      rightDriveTalon = new WPI_TalonSRX(Constants.DriveTrainPort.rightDriveTalon);
+      leftDriveTalon = new WPI_TalonSRX(Constants.DriveTrainPort.leftDriveTalonPort);
+      rightDriveTalon = new WPI_TalonSRX(Constants.DriveTrainPort.rightDriveTalonPort);
 
       leftDriveTalon.setNeutralMode(NeutralMode.Coast);
       rightDriveTalon.setNeutralMode(NeutralMode.Coast);
